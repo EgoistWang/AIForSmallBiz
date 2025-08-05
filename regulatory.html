@@ -1,0 +1,79 @@
+<!-- ============================ regulatory.html ============================ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Regulatory Peace of Mind – AImpact4SmallBiz</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container nav-wrap">
+        <a class="logo" href="index.html">AImpact4SmallBiz</a>
+        <nav>
+          <a href="introduction.html">Why Us</a>
+          <a href="solution.html">Process</a>
+          <a href="roadmap.html">Roadmap</a>
+          <a href="contact.html">Contact</a>
+          <a class="btn primary" href="chat.html">Get Started</a>
+        </nav>
+      </div>
+    </header>
+    <section class="sub-hero">
+      <div class="container">
+        <h1>Regulatory Peace of Mind</h1>
+        <p class="lead">Stay compliant, avoid penalties, and focus on growth.</p>
+      </div>
+    </section>
+    <section class="features" style="padding-top:2.5rem;">
+      <div class="container feature-grid">
+        <div class="card">
+          <h3>Automated Compliance Checks</h3>
+          <p>Cross-reference your PLC and HMI designs against industry standards (ISA-88, FDA 21 CFR Part 11, EPA) during the design phase. Get instant feedback and corrections.</p>
+          <img src="recourse/img/Automated Compliance Checks.png" alt="Automated Compliance Checks" style="width:100%;margin:1rem 0 0.5rem 0;" />
+        </div>
+        <div class="card">
+          <h3>Regulatory Database</h3>
+          <p>Stay up to date with evolving EPA, FDA, and USDA guidelines. Our platform updates templates and compliance checks automatically.</p>
+          <img src="recourse/img/Regulatory Database.png" alt="Regulatory Database" style="width:100%;margin:1rem 0 0.5rem 0;" />
+        </div>
+        <div class="card">
+          <h3>Audit-Ready Documentation</h3>
+          <p>Generate IQ, OQ, and PQ reports for audits and inspections. Save $5,000–$10,000 per project in compliance costs.</p>
+          <img src="recourse/img/Audit-Ready Documentation.png" alt="Audit-Ready Documentation" style="width:100%;margin:1rem 0 0.5rem 0;" />
+        </div>
+      </div>
+    </section>
+    <section class="intro-cta">
+      <div class="container cta-box">
+        <h2>Let us handle compliance for you.</h2>
+        <a href="contact.html" class="btn-intro">Contact Us</a>
+      </div>
+    </section>
+    <footer>© 2025 AImpact4SmallBiz. All rights reserved.</footer>
+    <script>
+      // Animate feature cards on scroll
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.style.opacity = 1;
+              entry.target.style.transform = "translateY(0)";
+            }
+          });
+        },
+        { threshold: 0.2 }
+      );
+      document.querySelectorAll(".card").forEach((el) => {
+        el.style.opacity = 0;
+        el.style.transform = "translateY(30px)";
+        observer.observe(el);
+      });
+    </script>
+  </body>
+</html> 

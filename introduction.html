@@ -1,0 +1,189 @@
+<!-- ============================ introduction.html ============================ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Why Us – AImpact4SmallBiz</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Project‑wide stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ===== Navigation (shared) ===== -->
+    <header class="navbar">
+      <div class="container nav-wrap">
+        <a class="logo" href="index.html">AImpact4SmallBiz</a>
+        <nav>
+          <a href="introduction.html" class="active">Why Us</a>
+          <a href="solution.html">Process</a>
+          <a href="roadmap.html">Roadmap</a>
+          <a href="contact.html">Contact</a>
+          <a class="btn primary" href="chat.html">Get Started</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ===== Sub‑Hero ===== -->
+    <section class="sub-hero">
+      <div class="container">
+        <h1>Why AImpact4SmallBiz?</h1>
+        <p class="lead">
+          We blend cutting‑edge AI with practical engineering know‑how to give
+          small manufacturers the competitive edge usually reserved for Fortune
+          500s.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== Value Grid with Local Images & 3‑D Effect ===== -->
+    <section class="intro-values">
+      <div class="container intro-grid">
+        <!-- Card 1 -->
+        <div class="intro-card expandable">
+          <img src="recourse/cost-effective.jpg" alt="Cost‑Effective Automation" />
+          <h3>Cost‑Effective Automation</h3>
+          <div class="expand-content">
+            <p>
+              AImpact4SmallBiz slashes automation costs by up to 60% for small manufacturers. Our affordable subscription model replaces expensive engineering consultants and proprietary software, making advanced PLC/HMI systems accessible to firms with budgets as low as $5,000 annually. <br><br>
+              <a href="cost-effective.html" class="btn secondary" style="margin:1rem 1.5rem 1.5rem;">Learn More</a>
+            </p>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="intro-card expandable">
+          <img src="recourse/rapid-deployment.jpg" alt="Rapid Deployment" />
+          <h3>Rapid Deployment</h3>
+          <div class="expand-content">
+            <p>
+              Deploy automation projects in hours, not weeks. Our AI engine generates PLC ladder logic, HMI screens, and compliance documentation instantly from your requirements, accelerating your time to production and market.<br><br>
+              <a href="rapid-deployment.html" class="btn secondary" style="margin:1rem 1.5rem 1.5rem;">Learn More</a>
+            </p>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="intro-card expandable">
+          <img src="recourse/regulatory.jpg" alt="Regulatory Peace of Mind" />
+          <h3>Regulatory Peace of Mind</h3>
+          <div class="expand-content">
+            <p>
+              Stay compliant with industry standards like ISA-88, FDA cGMP, and OSHA. Our platform includes real-time compliance checks, automated documentation, and training modules to minimize regulatory risk and avoid costly penalties.<br><br>
+              <a href="regulatory.html" class="btn secondary" style="margin:1rem 1.5rem 1.5rem;">Learn More</a>
+            </p>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="intro-card expandable">
+          <img src="recourse/vendor-agnostic.jpg" alt="Vendor‑Agnostic Templates" />
+          <h3>Vendor‑Agnostic Templates</h3>
+          <div class="expand-content">
+            <p>
+              Integrate seamlessly with Allen-Bradley, Siemens, CODESYS, and IIoT stacks. Our pre-configured templates ensure compatibility with 80% of industry-standard PLC and HMI hardware, reducing integration time and cost.<br><br>
+              <a href="vendor-agnostic.html" class="btn secondary" style="margin:1rem 1.5rem 1.5rem;">Learn More</a>
+            </p>
+          </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="intro-card expandable">
+          <img src="recourse/ai-insights.jpg" alt="AI‑Powered Insights" />
+          <h3>AI‑Powered Insights</h3>
+          <div class="expand-content">
+            <p>
+              Unlock hidden savings and prevent downtime with predictive analytics. Our machine learning models monitor system performance, forecast failures, and recommend optimizations to maximize efficiency and reduce costs.<br><br>
+              <a href="ai-insights.html" class="btn secondary" style="margin:1rem 1.5rem 1.5rem;">Learn More</a>
+            </p>
+          </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="intro-card expandable">
+          <img src="recourse/human-centric.jpg" alt="Human‑Centric Design" />
+          <h3>Human‑Centric Design</h3>
+          <div class="expand-content">
+            <p>
+              Our intuitive UI and guided workflows empower non-experts to manage complex automations. Training modules and community support ensure everyone can leverage advanced automation, regardless of technical background.<br><br>
+              <a href="human-centric.html" class="btn secondary" style="margin:1rem 1.5rem 1.5rem;">Learn More</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA Banner ===== -->
+    <section class="intro-cta">
+      <div class="container cta-box">
+        <h2>Ready to see the platform in action?</h2>
+        <a href="solution.html" class="btn-intro">Explore the Platform</a>
+      </div>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer>© 2025 AImpact4SmallBiz. All rights reserved.</footer>
+
+    <style>
+      .expand-content {
+        max-height: 3.2em;
+        overflow: hidden;
+        position: relative;
+        transition: max-height 0.5s cubic-bezier(0.4,0,0.2,1);
+        cursor: pointer;
+      }
+      .expand-content::after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0; right: 0; bottom: 0;
+        height: 2em;
+        background: linear-gradient(to bottom, rgba(245,245,247,0), #f5f5f7 90%);
+        pointer-events: none;
+        transition: opacity 0.3s;
+      }
+      .intro-card.expanded .expand-content {
+        max-height: 500px;
+        transition: max-height 0.7s cubic-bezier(0.4,0,0.2,1);
+      }
+      .intro-card.expanded .expand-content::after {
+        opacity: 0;
+      }
+      .expand-content {
+        margin-bottom: 0.5rem;
+      }
+    </style>
+    <script>
+      // Expand/collapse logic for intro cards
+      document.querySelectorAll('.intro-card.expandable .expand-content').forEach(function(content) {
+        const card = content.closest('.intro-card');
+        card.addEventListener('click', function(e) {
+          // Only expand if not clicking a link
+          if (e.target.tagName.toLowerCase() === 'a') return;
+          card.classList.toggle('expanded');
+        });
+      });
+      // Keep scroll-reveal observer
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.style.opacity = 1;
+              entry.target.style.transform = "translateY(0)";
+            }
+          });
+        },
+        { threshold: 0.2 }
+      );
+      document.querySelectorAll(".intro-card").forEach((el) => {
+        el.style.opacity = 0;
+        el.style.transform = "translateY(30px)";
+        observer.observe(el);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat – AImpact4SmallBiz</title>
+
+    <!-- Fonts & main stylesheet -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- ===== NAVBAR (identical on every page) ===== -->
+    <header class="navbar">
+      <div class="container nav-wrap">
+        <a class="logo" href="index.html">AImpact4SmallBiz</a>
+        <nav>
+          <a href="introduction.html">Why Us</a>
+          <a href="solution.html">Process</a>
+          <a href="roadmap.html">Roadmap</a>
+          <a href="contact.html">Contact</a>
+          <a class="btn primary" href="chat.html" aria-current="page"
+            >Get Started</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <!-- ===== Chat “hero” ===== -->
+    <main class="chat-hero">
+      <h1 class="chat-heading">Ask our AI anything</h1>
+      <p class="chat-tagline">
+        From growth hacks to bookkeeping tips — get answers in seconds.
+      </p>
+
+      <div class="chat-wrapper">
+        <iframe
+          src="https://www.chatbase.co/chatbot-iframe/L8g2eFc5hLSLbRsN5nWTn"
+          allow="clipboard-write"
+          loading="lazy"
+        >
+        </iframe>
+      </div>
+    </main>
+
+    <!-- ===== Chatbase SDK (fresh session every time) ===== -->
+    <script>
+      window.chatbaseUserConfig = { user_id: crypto.randomUUID() };
+    </script>
+    <script
+      id="chatbase-script"
+      src="https://www.chatbase.co/embed.min.js"
+      chatbotId="L8g2eFc5hLSLbRsN5nWTn"
+    ></script>
+
+    <!-- ===== Footer ===== -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2023 AImpact4SmallBiz. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

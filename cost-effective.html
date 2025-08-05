@@ -1,0 +1,79 @@
+<!-- ============================ cost-effective.html ============================ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cost-Effective Automation – AImpact4SmallBiz</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container nav-wrap">
+        <a class="logo" href="index.html">AImpact4SmallBiz</a>
+        <nav>
+          <a href="introduction.html">Why Us</a>
+          <a href="solution.html">Process</a>
+          <a href="roadmap.html">Roadmap</a>
+          <a href="contact.html">Contact</a>
+          <a class="btn primary" href="chat.html">Get Started</a>
+        </nav>
+      </div>
+    </header>
+    <section class="sub-hero">
+      <div class="container">
+        <h1>Cost-Effective Automation</h1>
+        <p class="lead">Affordable, scalable automation for every small business.</p>
+      </div>
+    </section>
+    <section class="features" style="padding-top:2.5rem;">
+      <div class="container feature-grid">
+        <div class="card">
+          <h3>Subscription Model</h3>
+          <p>Plans start at just $50/month, making advanced automation accessible to firms with budgets as low as $5,000 annually. No hidden fees, no expensive consultants.</p>
+          <img src="recourse/img/Subscription Model.png" alt="Subscription Model" style="width:100%;margin:1rem 0 0.5rem 0;" />
+        </div>
+        <div class="card">
+          <h3>Pre-Configured Templates</h3>
+          <p>Reduce setup costs by 30% with ready-made templates for Allen-Bradley, Siemens, and CODESYS systems. Spend less on integration, more on growth.</p>
+          <img src="recourse/img/Pre-Configured Templates.png" alt="Pre-Configured Templates" style="width:100%;margin:1rem 0 0.5rem 0;" />
+        </div>
+        <div class="card">
+          <h3>Supplier Partnerships</h3>
+          <p>Get exclusive hardware discounts through our supplier network, further lowering your total cost of ownership.</p>
+          <img src="recourse/img/Supplier Partnerships.png" alt="Supplier Partnerships" style="width:100%;margin:1rem 0 0.5rem 0;" />
+        </div>
+      </div>
+    </section>
+    <section class="intro-cta">
+      <div class="container cta-box">
+        <h2>Ready to save on automation?</h2>
+        <a href="contact.html" class="btn-intro">Contact Us</a>
+      </div>
+    </section>
+    <footer>© 2025 AImpact4SmallBiz. All rights reserved.</footer>
+    <script>
+      // Animate feature cards on scroll
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.style.opacity = 1;
+              entry.target.style.transform = "translateY(0)";
+            }
+          });
+        },
+        { threshold: 0.2 }
+      );
+      document.querySelectorAll(".card").forEach((el) => {
+        el.style.opacity = 0;
+        el.style.transform = "translateY(30px)";
+        observer.observe(el);
+      });
+    </script>
+  </body>
+</html> 

@@ -1,0 +1,97 @@
+<!-- ============================ roadmap-phase-2.html ============================ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roadmap Phase 2 – Pilot Testing | AImpact4SmallBiz</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container nav-wrap">
+        <a class="logo" href="index.html">AImpact4SmallBiz</a>
+        <nav>
+          <a href="introduction.html">Why Us</a>
+          <a href="solution.html">Process</a>
+          <a href="roadmap.html" class="active">Roadmap</a>
+          <a href="contact.html">Contact</a>
+          <a class="btn primary" href="chat.html">Get Started</a>
+        </nav>
+      </div>
+    </header>
+    <section class="sub-hero roadmap-hero">
+      <div class="container">
+        <h1>Phase 2: Pilot Testing (Months 7–12)</h1>
+        <p class="lead">Validating the platform: pilot programs, feedback, and early partnerships.</p>
+      </div>
+    </section>
+    <main class="container main-content">
+      <section class="feature-grid" style="margin-top:2.5rem;">
+        <div class="card reveal">
+          <h2>Objectives</h2>
+          <ul>
+            <li>Onboard 5–10 small businesses for pilot programs</li>
+            <li>Provide free access for 6 months to demonstrate ROI</li>
+            <li>Collect feedback, usage data, and ROI metrics</li>
+            <li>Refine compliance modules and templates</li>
+            <li>Establish supplier partnerships</li>
+            <li>Launch digital marketing and outreach</li>
+          </ul>
+        </div>
+        <div class="card reveal">
+          <h2>Milestones</h2>
+          <ul>
+            <li>5–10 pilot users onboarded</li>
+            <li>$25,000 in funding secured (grants and supplier fees)</li>
+            <li>Validated product-market fit</li>
+            <li>Refined compliance and template features</li>
+            <li>Initial digital marketing campaigns launched</li>
+          </ul>
+        </div>
+        <div class="card reveal">
+          <h2>Budget Allocation</h2>
+          <ul>
+            <li>$15,000 in grants (SBA, NIST)</li>
+            <li>$10,000 in supplier fees from vendor partnerships</li>
+            <li>Marketing and outreach costs</li>
+          </ul>
+        </div>
+        <div class="card reveal">
+          <h2>Key Activities</h2>
+          <ul>
+            <li>Pilot onboarding, user training, and support</li>
+            <li>Collect and analyze feedback and ROI</li>
+            <li>Refine platform features and content</li>
+            <li>Establish and grow supplier partnerships</li>
+            <li>Launch and monitor digital marketing</li>
+          </ul>
+        </div>
+      </section>
+      <section class="intro-cta">
+        <div class="container cta-box">
+          <h2>Ready to see the next phase?</h2>
+          <a href="roadmap-phase-3.html" class="btn-intro">Next: Market Launch</a>
+        </div>
+      </section>
+    </main>
+    <footer>© 2025 AImpact4SmallBiz. All rights reserved.</footer>
+    <script>
+      // Scroll-reveal for .card elements
+      function revealOnScroll() {
+        document.querySelectorAll('.card').forEach(function(el) {
+          const rect = el.getBoundingClientRect();
+          if (rect.top < window.innerHeight - 60) {
+            el.classList.add('reveal');
+          }
+        });
+      }
+      window.addEventListener('scroll', revealOnScroll);
+      window.addEventListener('DOMContentLoaded', revealOnScroll);
+    </script>
+  </body>
+</html> 

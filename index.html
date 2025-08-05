@@ -1,0 +1,223 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AImpact4SmallBiz – Home</title>
+
+    <!-- Fonts & CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ===== Navigation ===== -->
+    <header class="navbar">
+      <div class="container nav-wrap">
+        <a class="logo" href="index.html">AImpact4SmallBiz</a>
+        <nav>
+          <a href="introduction.html">Why Us</a>
+          <a href="solution.html">Process</a>
+          <a href="roadmap.html">Roadmap</a>
+          <a href="contact.html">Contact</a>
+          <a class="btn primary" href="chat.html">Get Started</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <div class="container">
+        <h1>Industrial Automation, <br />Reimagined for Small Business</h1>
+        <p>
+          Design, deploy and maintain PLC/HMI control systems in minutes—<br />
+          with the first AI platform built exclusively for U.S. small
+          enterprises.
+        </p>
+        <div class="cta">
+          <a href="solution.html" class="btn primary">Explore the Platform</a>
+          <a href="introduction.html" class="btn secondary">Learn More</a>
+        </div>
+      </div>
+      <div class="bg-shapes" aria-hidden="true"></div>
+    </section>
+
+    <!-- ===== Animated Mission/Impact Section ===== -->
+    <section class="features" id="mission-impact" style="background: linear-gradient(90deg, #fff6f2 0%, #fafbfe 100%); padding-top: 3rem; padding-bottom: 3rem;">
+      <div class="container" style="text-align:center;">
+        <h2 style="font-size:2.1rem; margin-bottom:1.2rem;">Our Mission</h2>
+        <p style="max-width:700px; margin:0 auto 2.5rem; color:var(--gray-600); font-size:1.15rem;">
+          Empowering small businesses to thrive in the era of automation.<br>
+          <span id="impact-animated" style="font-weight:600; color:var(--primary); font-size:1.25rem;"></span>
+        </p>
+        <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:2.5rem; margin-top:2.5rem;">
+          <div class="card reveal" style="min-width:220px;">
+            <h3 style="color:var(--primary)">60% Cost Savings</h3>
+            <p>Reduce engineering and compliance costs for small manufacturers.</p>
+          </div>
+          <div class="card reveal" style="min-width:220px;">
+            <h3 style="color:var(--primary)">30% Less Downtime</h3>
+            <p>AI-powered predictive maintenance keeps your business running.</p>
+          </div>
+          <div class="card reveal" style="min-width:220px;">
+            <h3 style="color:var(--primary)">100% Compliance</h3>
+            <p>Automatic validation for FDA, EPA, and industry standards.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== How It Works Section ===== -->
+    <section class="features" id="how-it-works">
+      <div class="container">
+        <h2 style="text-align:center;">How It Works</h2>
+        <div class="feature-grid" id="how-steps">
+          <div class="card step-card">
+            <h3>1. Describe Your Process</h3>
+            <p>Enter your workflow, equipment, and requirements in plain language.</p>
+          </div>
+          <div class="card step-card">
+            <h3>2. AI Generates Your Solution</h3>
+            <p>Our engine creates PLC logic, HMI screens, and compliance docs instantly.</p>
+          </div>
+          <div class="card step-card">
+            <h3>3. Deploy & Monitor</h3>
+            <p>Download, deploy, and monitor your system—on web or mobile, anytime.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Testimonials Carousel ===== -->
+    <section class="features" id="testimonials" style="background:#fff6f2; padding-top:3rem; padding-bottom:3rem;">
+      <div class="container" style="text-align:center;">
+        <h2 style="margin-bottom:2rem;">What Small Businesses Say</h2>
+        <div id="testimonial-carousel" style="max-width:600px; margin:0 auto;">
+          <div class="card" id="testimonial-card">
+            <p style="font-size:1.1rem;">“AImpact4SmallBiz cut our automation costs in half and made compliance a breeze.”</p>
+            <div style="margin-top:1rem; font-weight:600; color:var(--primary);">— Water Purification Firm, CA</div>
+          </div>
+        </div>
+        <div style="margin-top:1.2rem;">
+          <button id="prev-testimonial" class="btn secondary" style="margin-right:0.5rem;">&#8592;</button>
+          <button id="next-testimonial" class="btn secondary">&#8594;</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Feature Highlights ===== -->
+    <section class="features">
+      <div class="container">
+        <h2>Empowering every step of your automation journey</h2>
+        <div class="feature-grid">
+          <div class="card">
+            <h3>AI‑Driven Design</h3>
+            <p>
+              Instantly generate ladder logic & HMI screens from simple workflow
+              prompts.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Built‑in Compliance</h3>
+            <p>
+              Automatic ISA‑88, FDA & OSHA validation—no regulatory surprises.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Predictive Maintenance</h3>
+            <p>
+              ML models forecast failures and reduce unplanned downtime by up to
+              30%.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Templates & Integrations</h3>
+            <p>
+              Ready‑made configurations for Allen‑Bradley, Siemens and CODESYS
+              systems.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer>© 2025 AImpact4SmallBiz. All rights reserved.</footer>
+
+    <!-- ===== Animation Script ===== -->
+    <script>
+      // Animated impact text
+      const impactPhrases = [
+        "Save $20,000+ per year on automation.",
+        "No more regulatory headaches.",
+        "AI for every small business.",
+        "From weeks to hours: deploy faster.",
+        "Empowering U.S. innovation."
+      ];
+      let impactIdx = 0;
+      function animateImpact() {
+        const el = document.getElementById('impact-animated');
+        if (!el) return;
+        el.textContent = impactPhrases[impactIdx];
+        impactIdx = (impactIdx + 1) % impactPhrases.length;
+        setTimeout(animateImpact, 2200);
+      }
+      animateImpact();
+
+      // Testimonials carousel
+      const testimonials = [
+        {
+          text: "AImpact4SmallBiz cut our automation costs in half and made compliance a breeze.",
+          author: "— Water Purification Firm, CA"
+        },
+        {
+          text: "We deployed a new PLC system in days, not months. The AI guidance is a game changer!",
+          author: "— Medical Device Manufacturer, MA"
+        },
+        {
+          text: "The predictive maintenance alerts saved us thousands in downtime.",
+          author: "— Food Processing Plant, TX"
+        },
+        {
+          text: "Finally, automation that’s affordable and easy for small teams.",
+          author: "— Small Business Owner, NY"
+        }
+      ];
+      let testimonialIdx = 0;
+      function showTestimonial(idx) {
+        const card = document.getElementById('testimonial-card');
+        card.innerHTML = `<p style="font-size:1.1rem;">“${testimonials[idx].text}”</p><div style="margin-top:1rem; font-weight:600; color:var(--primary);">${testimonials[idx].author}</div>`;
+      }
+      document.getElementById('prev-testimonial').onclick = function() {
+        testimonialIdx = (testimonialIdx - 1 + testimonials.length) % testimonials.length;
+        showTestimonial(testimonialIdx);
+      };
+      document.getElementById('next-testimonial').onclick = function() {
+        testimonialIdx = (testimonialIdx + 1) % testimonials.length;
+        showTestimonial(testimonialIdx);
+      };
+      // Initial testimonial
+      showTestimonial(testimonialIdx);
+
+      // Scroll-reveal for .card elements
+      function revealOnScroll() {
+        const reveals = document.querySelectorAll('.card');
+        const windowHeight = window.innerHeight;
+        for (const el of reveals) {
+          const top = el.getBoundingClientRect().top;
+          if (top < windowHeight - 60) {
+            el.classList.add('reveal');
+          }
+        }
+      }
+      window.addEventListener('scroll', revealOnScroll);
+      window.addEventListener('DOMContentLoaded', revealOnScroll);
+    </script>
+  </body>
+</html>

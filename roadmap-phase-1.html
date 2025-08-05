@@ -1,0 +1,98 @@
+<!-- ============================ roadmap-phase-1.html ============================ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roadmap Phase 1 – Development | AImpact4SmallBiz</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container nav-wrap">
+        <a class="logo" href="index.html">AImpact4SmallBiz</a>
+        <nav>
+          <a href="introduction.html">Why Us</a>
+          <a href="solution.html">Process</a>
+          <a href="roadmap.html" class="active">Roadmap</a>
+          <a href="contact.html">Contact</a>
+          <a class="btn primary" href="chat.html">Get Started</a>
+        </nav>
+      </div>
+    </header>
+    <section class="sub-hero roadmap-hero">
+      <div class="container">
+        <h1>Phase 1: Development (Months 1–6)</h1>
+        <p class="lead">Building the foundation: AI engine, cloud infrastructure, and mobile app.</p>
+      </div>
+    </section>
+    <main class="container main-content">
+      <section class="feature-grid" style="margin-top:2.5rem;">
+        <div class="card reveal">
+          <h2>Objectives</h2>
+          <ul>
+            <li>Design platform architecture and select AWS as the cloud provider</li>
+            <li>Develop the AI engine using TensorFlow</li>
+            <li>Create initial UI/UX for web and mobile (React Native)</li>
+            <li>Implement security: encryption, role-based access</li>
+            <li>Develop 10 initial templates (5 water purification, 5 medical devices)</li>
+            <li>Build compliance tools for EPA and FDA standards</li>
+            <li>Develop 5 training modules</li>
+          </ul>
+        </div>
+        <div class="card reveal">
+          <h2>Milestones</h2>
+          <ul>
+            <li>Platform MVP ready for beta testing</li>
+            <li>10 templates and 5 training modules completed</li>
+            <li>First mobile app released</li>
+            <li>10 small businesses onboarded for beta</li>
+            <li>Initial regulatory compliance tools implemented</li>
+          </ul>
+        </div>
+        <div class="card reveal">
+          <h2>Budget Allocation</h2>
+          <ul>
+            <li>$30,000 for software development and server costs</li>
+            <li>$10,000 for content creation (templates, modules, compliance tools)</li>
+            <li>$5,000 for testing and quality assurance</li>
+          </ul>
+        </div>
+        <div class="card reveal">
+          <h2>Key Activities</h2>
+          <ul>
+            <li>Platform design and AWS setup</li>
+            <li>AI engine and UI/UX development</li>
+            <li>Security and compliance implementation</li>
+            <li>Beta testing with 10 businesses</li>
+            <li>Iterative feedback and improvement</li>
+          </ul>
+        </div>
+      </section>
+      <section class="intro-cta">
+        <div class="container cta-box">
+          <h2>Ready to see the next phase?</h2>
+          <a href="roadmap-phase-2.html" class="btn-intro">Next: Pilot Testing</a>
+        </div>
+      </section>
+    </main>
+    <footer>© 2025 AImpact4SmallBiz. All rights reserved.</footer>
+    <script>
+      // Scroll-reveal for .card elements
+      function revealOnScroll() {
+        document.querySelectorAll('.card').forEach(function(el) {
+          const rect = el.getBoundingClientRect();
+          if (rect.top < window.innerHeight - 60) {
+            el.classList.add('reveal');
+          }
+        });
+      }
+      window.addEventListener('scroll', revealOnScroll);
+      window.addEventListener('DOMContentLoaded', revealOnScroll);
+    </script>
+  </body>
+</html> 
